@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Handlebars Playground</title>
+
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .entry {
+        margin: 1em 0;
+      }
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .horizontal-list {
+        columns: 3;
+        list-style-position: inside;
+      }
+      p, ul, h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+      #title-bar {
+        border-top: 3px double #8c8b8b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="template-output"></div>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id="template" type="text/x-handlebars-template">
+      <div class="header">
+        <h1>{{ bio.[0].title }}</h1>
+        <h2>{{ bio.[0].details.subtitle }}</h2>
+      </div>
+      <hr id="title-bar"/>
+      <div class="types">
+        <h3>Professional Experience</h3>
+        <hr/>
+        {{#each employment}}
+          <div class="entry">
+            <div class="entry-header">
+              <p><b>{{this.title}}</b> &ndash; {{this.details.position}}</p>
+              <p>{{this.startDate}} &ndash; {{this.endDate}}</p>
+            </div>
+            <ul>
+              {{#each this.details.description}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/each}}
+
+        <h3>Education</h3>
+        <hr/>
+        {{#each education}}
+          <div class="entry">
+            <div class="entry-header">
+              <p><b>{{this.title}}</b> &ndash; {{this.details.degree}}</p>
+              <p>{{this.startDate}} &ndash; {{this.endDate}}</p>
+            </div>
+            <p>{{this.details.description.[0]}}</p>
+          </div>
+        {{/each}}
+
+        <h3>Projects</h3>
+        <hr/>
+        {{#each projects}}
+          <div class="entry">
+            <div class="entry-header">
+              <p><b>{{this.title}}</b></p>
+              <p>{{this.details.projectSource}}</p>
+            </div>
+            <ul>
+              {{#each this.details.description}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/each}}
+
+        <h3>Skills</h3>
+        <hr/>
+        <ul class="horizontal-list">
+          {{#each skills}}
+            <li class="skill">{{this.title}}</li>
+          {{/each}}
+        </ul>
+        
+        <h3>Social</h3>
+        <hr/>
+        <ul>
+          {{#each bio.[0].details.social}}
+            <li class="social"><a href="{{this.url}}">{{this.name}} @ {{this.url}}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
