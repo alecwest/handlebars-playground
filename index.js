@@ -37,33 +37,31 @@ const sampleData = {
   ],
   employment: [
     {
-      endDate: "5/4/2019",
-      startDate: "1/10/2017",
+      endDate: "present",
+      startDate: "8/1/2022",
       user: "alecwest",
       details: {
         description: [
-          "Worked with other students to build a Ruby on Rails website.",
-          "Provided team with initial DevOps tools to help support unit testing expectations",
+          "Troubleshot scale and performance issues experienced by customers",
         ],
-        position: "Intern",
+        position: "Senior Software Engineer",
       },
-      id: "1673747782535",
-      title: "Tennessee Technological University",
+      id: "1673747907996",
+      title: "Adtran",
       type: "employment",
     },
     {
-      endDate: "5/4/2018",
-      startDate: "8/1/2016",
+      endDate: "8/1/2022",
+      startDate: "7/1/2021",
       user: "alecwest",
       details: {
         description: [
-          "Ran network simulations with custom python scripts and presented results to mentors",
-          "Built debian packages and contributed to existing services in C++",
-          "Designed the end-to-end GUI testing framework for a new platform using Angular 2 and mocked requests",
+          "Helped plan/execute a developer-driven improvement of our GUI build pipeline, cutting build times for developers up to 10x and significantly lowering the barrier to entry for new teams.",
+          "Prioritized and planned features for the team backlog in coordination with the ART as a SAFe Product Owner",
         ],
-        position: "Co-Op",
+        position: "Software Engineer II",
       },
-      id: "1673747805599",
+      id: "1673747883391",
       title: "Adtran",
       type: "employment",
     },
@@ -84,42 +82,11 @@ const sampleData = {
       type: "employment",
     },
     {
-      endDate: "8/1/2022",
-      startDate: "7/1/2021",
-      user: "alecwest",
-      details: {
-        description: [
-          "Helped plan/execute a developer-driven improvement of our GUI build pipeline, cutting build times for developers up to 10x and significantly lowering the barrier to entry for new teams.",
-          "Prioritized and planned features for the team backlog in coordination with the ART as a SAFe Product Owner",
-        ],
-        position: "Software Engineer II",
-      },
-      id: "1673747883391",
-      title: "Adtran",
-      type: "employment",
-    },
-    {
-      endDate: "present",
-      startDate: "8/1/2022",
-      user: "alecwest",
-      details: {
-        description: [
-          "Troubleshot scale and performance issues experienced by customers",
-        ],
-        position: "Senior Software Engineer",
-      },
-      id: "1673747907996",
-      title: "Adtran",
-      type: "employment",
-    },
-    {
       endDate: "8/10/2018",
       startDate: "5/14/2018",
       user: "alecwest",
       details: {
         description: [
-          "Helped plan/execute a developer-driven improvement of our GUI build pipeline, cutting build times for developers up to 10x and significantly lowering the barrier to entry for new teams.",
-          "Prioritized and planned features for the team backlog in coordination with the ART as a SAFe Product Owner",
         ],
         position: "Intern",
       },
@@ -127,6 +94,32 @@ const sampleData = {
       title: "Joint Warfare Analysis Center",
       type: "employment",
     },
+    {
+      endDate: "5/4/2019",
+      startDate: "1/10/2017",
+      user: "alecwest",
+      details: {
+        description: [
+        ],
+        position: "Intern",
+      },
+      id: "1673747782535",
+      title: "Tennessee Technological University",
+      type: "employment",
+    },
+    {
+      endDate: "5/4/2018",
+      startDate: "8/1/2016",
+      user: "alecwest",
+      details: {
+        description: [
+        ],
+        position: "Co-Op",
+      },
+      id: "1673747805599",
+      title: "Adtran",
+      type: "employment",
+    }
   ],
   skills: [
     {
@@ -145,24 +138,6 @@ const sampleData = {
       details: { proficiency: 5 },
       id: "1673749808349",
       title: "Typescript / Javascript",
-      type: "skills",
-    },
-    {
-      endDate: "present",
-      startDate: "1/1/2018",
-      user: "alecwest",
-      details: { proficiency: 3 },
-      id: "1673749835436",
-      title: "Kafka / Activemq",
-      type: "skills",
-    },
-    {
-      endDate: "present",
-      startDate: "1/1/2019",
-      user: "alecwest",
-      details: { proficiency: 3 },
-      id: "1673749858793",
-      title: "AWS / Azure",
       type: "skills",
     },
     {
@@ -193,21 +168,21 @@ const sampleData = {
       type: "skills",
     },
     {
-      endDate: "5/4/2019",
-      startDate: "8/1/2015",
+      endDate: "present",
+      startDate: "1/1/2018",
       user: "alecwest",
-      details: { proficiency: 2 },
-      id: "1673749858797",
-      title: "C / C++",
+      details: { proficiency: 3 },
+      id: "1673749835436",
+      title: "Kafka / Activemq",
       type: "skills",
     },
     {
-      endDate: "1/1/2020",
-      startDate: "6/1/2017",
+      endDate: "present",
+      startDate: "1/1/2019",
       user: "alecwest",
-      details: { proficiency: 2 },
-      id: "1673749858798",
-      title: "Golang",
+      details: { proficiency: 3 },
+      id: "1673749858793",
+      title: "AWS / Azure",
       type: "skills",
     },
     {
@@ -217,24 +192,6 @@ const sampleData = {
       details: { proficiency: 3 },
       id: "1673749858799",
       title: "Databases",
-      type: "skills",
-    },
-    {
-      endDate: "5/1/2022",
-      startDate: "8/1/2018",
-      user: "alecwest",
-      details: { proficiency: 4 },
-      id: "1673749858800",
-      title: "Hadoop / Mapreduce",
-      type: "skills",
-    },
-    {
-      endDate: "5/4/2019",
-      startDate: "1/1/2016",
-      user: "alecwest",
-      details: { proficiency: 2 },
-      id: "1673749858801",
-      title: "Ruby / Rails",
       type: "skills",
     },
     {
@@ -281,30 +238,11 @@ const sampleData = {
       type: "projects",
     },
     {
-      endDate: "8/1/2019",
-      startDate: "6/1/2017",
-      user: "alecwest",
-      details: {
-        description: [
-          "Wrote multiple iterations of an irc dad/mom bot in javascript, python, and go",
-          "Each iteration aimed to improve on code readability and ability to easily add new responses, while also exploring different languages.",
-        ],
-        projectSource: "https://github.com/AFTERWAKE/IRCBots/tree/master/dad",
-      },
-      id: "1673750380532",
-      title: "IRC bots",
-      type: "projects",
-    },
-    {
       endDate: "5/4/2019",
       startDate: "8/1/2018",
       user: "alecwest",
       details: {
         description: [
-          "Mobile App using Ionic and Cordova",
-          "To provide park info, alerts and events straight to visitors' phones.",
-          "Cached data so users can still use the app while in low-coverage park areas.",
-          "Precursor to official TN State Parks App",
         ],
         projectSource: "available upon request",
       },
@@ -318,13 +256,24 @@ const sampleData = {
       user: "alecwest",
       details: {
         description: [
-          "AI class project in C that initially had the highest performance.",
-          "Redone over the summer in Kotlin to practice design patterns.",
         ],
         projectSource: "https://github.com/alecwest/wumpus-kotlin",
       },
       id: "1673750380534",
       title: "Wumpus World text game",
+      type: "projects",
+    },
+    {
+      endDate: "8/1/2019",
+      startDate: "6/1/2017",
+      user: "alecwest",
+      details: {
+        description: [
+        ],
+        projectSource: "https://github.com/AFTERWAKE/IRCBots/tree/master/dad",
+      },
+      id: "1673750380532",
+      title: "IRC bots",
       type: "projects",
     },
   ],
@@ -358,11 +307,17 @@ const sampleData = {
   ],
 };
 
+
+/**
+ * Assumptions about the data
+ * - categories provided include education, employment, skills, projects, bio
+ * - entries within each category are correctly ordered (will not be sorted here)
+ * - all description information provided will be presented for employment and projects
+ */
 function buildTemplate(data) {
   const templateHTML = document.getElementById("template").innerHTML;
   const compiledTemplate = Handlebars.compile(templateHTML);
   const completeHTML = compiledTemplate(data);
-  console.log(completeHTML);
   document.getElementById("template-output").innerHTML = completeHTML;
 }
 
